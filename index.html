@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Jawaban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header-->
+        <header>
+            <h1>Sayang aku mau ngucapin Rasa terimakasih aku yang besar mungkin ini ga seberapa</h1>
+            <p>Aku tau aku kadang bikin kamu marah karna suatu perkataan atau perbuatan tapi kadang kamu selalu mengerti situasi apapun,kamu berbeda dari yang lain sayang</p>
+        </header>
+        <!--Pesan utama-->
+        <section class="message">
+            <h2>Pesan untuk mu</h2>
+            <p>Sayang aku cuma mau bilang terimakasih banyak banget buat semua perhatin dan cinta kamu. You'are my everything,and i feel so lucky to have you in my life.setiap momen bareng kamu selalu berarti buat aku..:>
+            </p>
+        </section>
+        <!--Pertanyaan-->
+        <section class="question">
+            <h2>Ada pertanyaan buat kamu:</h2>
+            <p>apa yang kurang dari aku biar aku rubah buat kamu nanti aku lakuin
+            </p>
+            <form action="mailto:ryzzgaming06@gmail.com" method="POST" enctype="text/plain">
+                <p>Apakah kamu bener-bener tulus?</p>
+                <input type="radio" id="yes" name="answer" value="Yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="answer" value="No">
+                <label for="no">No</label><br><br>
+                <input type="submit" value="Kirim Jawaban">
+              </form>
+        </div>
+    </section>
+    <div class="bubble"></div>
+<div class="bubble"></div>
+<div class="bubble"></div>
+<div class="bubble"></div>
+
+<!--Script-->
+<script>
+    function showAnswer(answer) {
+        document.getElementById('answer').textContent = answer;
+    }
+</script>
+    
+</body>
+</html>
